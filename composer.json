@@ -1,0 +1,8 @@
+{
+  "autoload": {
+    "psr-4": {
+      "BXGX\\": "",
+      "BXGX\\App\\": "app/"
+    }
+  }
+}
