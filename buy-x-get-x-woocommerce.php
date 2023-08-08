@@ -2,15 +2,16 @@
 /**
  * Buy x get x product for woocommerce
  *
- * @package           buy-x-get-x-woocommerce
+ * @package           buy-x-get-y-offers-rule
  * @author            Kirubanithi G <kirubanithikm@gmail.com>
  * @license           GPL-3.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       Buy X Get X Product for WooCommerce
- * Plugin URI:        http://wordpress.org/plugins/hello-wordpress/
+ * Plugin Name:       buy-x-get-y-offers-rule
+ * Plugin URI:        https://github.com/Kirubanithikm/buy-x-get-y-offers-rule
  * Description:       Buy product X and get the product Y!
  * Requires at least: 5.2
+ * Version:           1.0
  * Requires PHP:      5.6
  * Author:            Kirubanithi G
  * Author URI:        http://example.org/
@@ -46,3 +47,18 @@ if (class_exists('BXGX\App\Route')) {
 } else {
     wp_die('Buy x and get x plugin for WooCommerce is unable to find the Route class.');
 }
+
+
+// Git config for update
+
+require 'plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/Kirubanithikm/buy-x-get-y-offers-rule',
+    __FILE__,
+    'buy-x-get-y-offers-rule'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
