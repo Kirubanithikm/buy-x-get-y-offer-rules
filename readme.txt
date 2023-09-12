@@ -1,4 +1,5 @@
 === Buy X Get Y for WooCommerce - Create Buy one and Get one offer rules ===
+
 Author: Kirubanithi G
 Contact: 7868914689
 Mail id: kirubanithikm@gmail.com
